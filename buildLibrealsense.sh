@@ -34,6 +34,12 @@ while [ "$1" != "" ]; do
 done
 
 echo "Build with CUDA: "$USE_CUDA
+sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-8 10
+sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-9 20
+sudo update-alternatives --config gcc
+sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-8 10
+sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-9 20
+sudo update-alternatives --config g++
 
 red=`tput setaf 1`
 green=`tput setaf 2`
