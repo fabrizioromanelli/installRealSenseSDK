@@ -5,7 +5,7 @@
 
 # Jetson Nano; L4T 32.2.3
 
-LIBREALSENSE_DIRECTORY=${HOME}/librealsense
+LIBREALSENSE_DIRECTORY=~/workspace/librealsense
 LIBREALSENSE_VERSION=v2.43.0
 INSTALL_DIR=$PWD
 NVCC_PATH=/usr/local/cuda-10.2/bin/nvcc
@@ -55,7 +55,7 @@ echo ""
 
 if [ ! -d "$LIBREALSENSE_DIRECTORY" ] ; then
   # clone librealsense
-  cd ${HOME}
+  cd ~/workspace
   echo "${green}Cloning librealsense${reset}"
   git clone https://github.com/IntelRealSense/librealsense.git
 fi
