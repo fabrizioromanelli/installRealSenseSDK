@@ -5,7 +5,7 @@
 
 # Jetson Nano; L4T 32.2.3
 
-LIBREALSENSE_DIRECTORY=~/workspace/librealsense
+LIBREALSENSE_DIRECTORY=~/thorDrone/Tools_Workspace/librealsense
 LIBREALSENSE_VERSION=v2.43.0
 INSTALL_DIR=$PWD
 NVCC_PATH=/usr/local/cuda-10.2/bin/nvcc
