@@ -55,7 +55,7 @@ echo ""
 
 if [ ! -d "$LIBREALSENSE_DIRECTORY" ] ; then
   # clone librealsense
-  cd ~/workspace
+  cd ~/thorDrone/Tools_Workspace
   echo "${green}Cloning librealsense${reset}"
   git clone https://github.com/IntelRealSense/librealsense.git
 fi
